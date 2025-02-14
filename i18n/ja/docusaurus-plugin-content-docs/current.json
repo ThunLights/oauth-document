@@ -18,5 +18,13 @@
   "sidebar.tutorialSidebar.category.Endpoints.link.generated-index.description": {
     "message": "A brief summary of each endpoint is provided.",
     "description": "The generated-index page description for category Endpoints in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Preparation": {
+    "message": "Preparation",
+    "description": "The label for category Preparation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Preparation.link.generated-index.description": {
+    "message": "Preliminary preparations are explained.",
+    "description": "The generated-index page description for category Preparation in sidebar tutorialSidebar"
   }
 }
