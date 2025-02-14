@@ -3,72 +3,28 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "Tutorial - Basics",
-    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Use Libraries": {
+    "message": "Use Libraries",
+    "description": "The label for category Use Libraries in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
-    "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Use Libraries.link.generated-index.description": {
+    "message": "A brief summary of thunlights open authorization for each language.",
+    "description": "The generated-index page description for category Use Libraries in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
-    "message": "Tutorial - Extras",
-    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Endpoints": {
+    "message": "Endpoints",
+    "description": "The label for category Endpoints in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.初心者向け": {
-    "message": "初心者向け",
-    "description": "The label for category 初心者向け in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Endpoints.link.generated-index.description": {
+    "message": "A brief summary of each endpoint is provided.",
+    "description": "The generated-index page description for category Endpoints in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.初心者向け.link.generated-index.description": {
-    "message": "各エンドポイントについて簡潔にまとめました。",
-    "description": "The generated-index page description for category 初心者向け in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Preparation": {
+    "message": "Preparation",
+    "description": "The label for category Preparation in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.環境構築": {
-    "message": "環境構築",
-    "description": "The label for category 環境構築 in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.環境構築.link.generated-index.description": {
-    "message": "本ドキュメントの推奨環境構築について導入方法等を解説します。",
-    "description": "The generated-index page description for category 環境構築 in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.初心者用チュートリアル": {
-    "message": "初心者用チュートリアル",
-    "description": "The label for category 初心者用チュートリアル in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.初心者用チュートリアル.link.generated-index.description": {
-    "message": "本ドキュメントの推奨環境構築について導入方法等を解説します。",
-    "description": "The generated-index page description for category 初心者用チュートリアル in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.エンドポイント一覧": {
-    "message": "エンドポイント一覧",
-    "description": "The label for category エンドポイント一覧 in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.エンドポイント一覧.link.generated-index.description": {
-    "message": "各エンドポイントについて簡潔にまとめました。",
-    "description": "The generated-index page description for category エンドポイント一覧 in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.チュートリアル(初心者向け)": {
-    "message": "チュートリアル(初心者向け)",
-    "description": "The label for category チュートリアル(初心者向け) in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.チュートリアル(初心者向け).link.generated-index.description": {
-    "message": "初心者向けチュートリアルです。玄人の方は玄人向けを見てください。※初心者と言ってもある程度のプログラミング知識が必要です。",
-    "description": "The generated-index page description for category チュートリアル(初心者向け) in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.実際にコードを書いてみよう!": {
-    "message": "実際にコードを書いてみよう!",
-    "description": "The label for category 実際にコードを書いてみよう! in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.実際にコードを書いてみよう!.link.generated-index.description": {
-    "message": "本ドキュメントの推奨環境構築について導入方法等を解説します。",
-    "description": "The generated-index page description for category 実際にコードを書いてみよう! in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.チュートリアル (玄人向け)": {
-    "message": "チュートリアル (玄人向け)",
-    "description": "The label for category チュートリアル (玄人向け) in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.チュートリアル (玄人向け).link.generated-index.description": {
-    "message": "玄人向けチュートリアルです。初心者向けを見たならこちらは不要かもしれません。※内容は初心者向けから不要な部分をそぎ落としたものです。",
-    "description": "The generated-index page description for category チュートリアル (玄人向け) in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Preparation.link.generated-index.description": {
+    "message": "Preliminary preparations are explained.",
+    "description": "The generated-index page description for category Preparation in sidebar tutorialSidebar"
   }
 }

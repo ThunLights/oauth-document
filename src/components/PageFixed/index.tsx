@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 
+import ABlank from "../ABlank/index";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 
@@ -7,10 +8,10 @@ export default function(): ReactNode {
     return (
         <div className={`container ${styles.contents}`}>
             <div className="text--center padding-horiz--md">
-                <Heading as="h1">ドキュメントの修正について</Heading>
-                <p>ドキュメントの修正は<a href="https://github.com/thunlights/oauth-document" target="_blank" rel="noopener noreferrer">こちら</a>にPull Requestを出すことで誰でも行う事が可能です。</p>
-                <p>誤字脱字の指摘や多言語対応など様々な事に活用していただけるとありがたいです。</p>
-                <p>修正箇所について不安が残る場合は<a href="https://github.com/ThunLights/oauth-document/issues" target="_blank" rel="noopener noreferrer">issue</a>を活用していただけると幸いです。</p>
+                <Heading as="h1">Modifications to this document</Heading>
+                <p>Anyone can modify the documentation by submitting a Pull Request <ABlank href="https://github.com/thunlights/oauth-document" content="here" />.</p>
+                <p>We would be grateful if you could use it for various things, such as pointing out typographical errors and multilingual support.</p>
+                <p>If you have any remaining concerns about the revisions, we would appreciate it if you could use the <ABlank href="https://github.com/ThunLights/oauth-document/issues" content="issue"/>.</p>
             </div>
         </div>
     )
