@@ -1,0 +1,43 @@
+---
+sidebar_position: 2
+title: 必要なツールをインストール
+---
+
+# 開発に必要なものを用意していきます。
+
+**ここで紹介するのはこのドキュメントに記載されているコードを実行するための環境構築です。**
+他言語や他ライブラリでもThunLights Oauthは利用することが出来ます。
+
+## 1: Node.js / npmをインストール
+
+[Node.js公式サイト](https://nodejs.org/en/download)からダウンロードしましょう。
+
+どのようにダウンロードするかに関しては、セレクトメニューで自分に合った環境を選択してください。
+
+2025/1/29時点ではNode.jsの最新バージョン(22や23)は一部環境では動作が不安定にになる可能性があるので注意してください。
+ThunLightsの開発はNode.js v20.18.2で行っています。参考にしていただけたら幸いです。
+
+## 2: VScodeをインストール
+
+[こちら](https://code.visualstudio.com/)からVScodeをインストールしてください。
+
+VScodeのデフォルトの言語設定は英語になっているので日本人の方は[日本語化拡張機能](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja)を入れることを推奨します。
+
+## 3: 開発環境構築
+
+インストール後はフォルダをワークスペースとして追加してください。
+
+その後、以下のコマンドを実行して環境を構築してください
+
+```console
+$ npm init -y
+$ npm install typescript
+$ npm install ts-node
+$ npx tsc --init
+```
+
+package.jsonやtsconfig.jsonなどのファイルが生成されたと思います。
+
+最後の仕上げにindex.tsを作成すればした準備完了です。
+
+このドキュメントのテストコードは全てindex.tsに記述し`ts-node index.ts`を実行すれば実行することが出来ます。

@@ -1,0 +1,45 @@
+---
+sidebar_position: 1
+title: 簡易的なサーバーを構築する
+---
+
+# 仮サーバーの用意
+
+今回はHonoを使って解説しますが他フレームワークでも大丈夫です。
+
+## インストール
+
+以下のインストールコマンドを実行してください
+```console
+$ npm install hono
+$ npm install @hono/node-server
+```
+
+## 実際のコード
+
+以下のコードによって簡易的なサーバーを組むことが出来ます。
+```ts
+import { Hono } from "hono";
+import { serve } from "@hono/node-server";
+
+const app = new Hono();
+
+app.get("/callback", async (c) => {
+    return c.json({
+        content: "This is a test."
+    }, 200)
+});
+
+serve({ fetch: app.fetch, port: 3000 });
+```
+
+今回の場合は実行後にhttp://localhost:3000/callback にアクセスすると実際にサーバーを起動しているのが分かると思います。
+
+## ログイン用のURLをHTMLへ追加
+
+以下のようなaタグを入れることによってThunLights Oauthを扱う事が出来るようになります。
+```html
+<a href="https://thunlights.com/oauth?site={DOMAIN}">LOGIN</a>
+```
+
+**※\{DOMAIN\}の部分は、使う予定のドメインを入れてください (例: example.com)**

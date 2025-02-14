@@ -1,0 +1,10 @@
+
+robot:
+  name: ROBOT
+  title: Lead Programmer
+  url: https://github.com/ROBOTofficial
+  image_url: https://github.com/ROBOTofficial.png
+  page: true
+  socials:
+    x: AlwaysHarapan
+    github: ROBOTofficial

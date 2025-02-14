@@ -1,0 +1,37 @@
+---
+sidebar_position: 1
+title: /check/code/$code
+---
+
+# /check/code/$code
+
+このAPIを使う事によってcodeをaccessTokenとrefreshTokenに変換できます。
+
+Example
+```ts
+const code = "";
+const secret = "";
+const domain = encodeURIComponent("");
+const url = `https://oauth.thunlights.com/check/code/${code}`;
+
+async function main() {
+    const response = await fetch(`${url}?secret=${secret}&domain=${domain}`, {
+        method: "POST",
+    });
+
+    if (response.ok) {
+        console.log("-------DATA-------");
+        console.log(await response.json());
+    }
+}
+
+main();
+```
+
+Response
+```json
+{
+    "accessToken": "ACCESS_TOKEN",
+    "refreshToken": "REFRESH_TOKEN"
+}
+```

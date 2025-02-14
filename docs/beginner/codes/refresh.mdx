@@ -1,0 +1,47 @@
+---
+sidebar_position: 3
+title: アクセストークンの再発行
+---
+
+# アクセストークンの再発行
+
+前章でアクセストークンについて学んだと思いますがこのアクセストークンというのは4時間で切れてしまいます。
+
+その際に使うのがcodeをアクセストークンにした際に渡されるリフレッシュトークンです。
+
+以下のような関数一度実行してみてください。
+```ts
+const id = 0;
+const refreshToken = "";
+const secret = "";
+const domain = encodeURIComponent("");
+const url = `https://oauth.thunlights.com/check/refreshToken/${refreshToken}`;
+
+async function main() {
+    const response = await fetch(`${url}?secret=${secret}&domain=${domain}&id=${id}`, {
+        method: "POST",
+    });
+
+    if (response.ok) {
+        console.log("-------DATA-------");
+        console.log(await response.json());
+    }
+}
+
+main();
+```
+
+これを実行すると画面に以下のようなjsonが出ると思います。
+```json
+{
+    "accessToken": "ACCESS_TOKEN"
+}
+```
+
+このようにしてアクセストークンを更新するのです。
+
+そしてサービスを運営していると上記のような関数を実行してもアクセストークンが帰ってこないことがあると思います。
+それはユーザーがあなたのドメインとの連携を解除したという意味です。
+連携を解除するとリフレッシュトークンを送ってもアクセストークンが帰ってこなくなります。
+
+※連携が解除されている場合はちゃんと400が帰ってくるので安心してください。

@@ -1,0 +1,8 @@
+{
+    "label": "エンドポイント一覧",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "各エンドポイントについて簡潔にまとめました。"
+    }
+}

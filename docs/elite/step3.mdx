@@ -1,0 +1,43 @@
+---
+sidebar_position: 3
+title: Step3 リフレッシュトークンでアクセストークンを再発行
+---
+
+# リフレッシュトークンでアクセストークンを再発行
+
+前章で話したアクセストークンですが発行から4時間で有効期限が切れてしまいます。
+
+その際に更新に使えるのがアクセストークンと一緒に取得できるリフレッシュトークンです。
+
+## 実際の使用例
+
+以下の関数を使う事でアクセストークンを再発行することが出来ます。
+
+```ts
+const secret = "";
+const domain = encodeURIComponent("");
+
+async function refresh(refreshToken: string, id: number) {
+    const url = `https://oauth.thunlights.com/check/refreshToken/${refreshToken}`;
+    const response = await fetch(`${url}?secret=${secret}&domain=${domain}&id=${id}`, {
+        method: "POST",
+    });
+
+    if (response.ok) {
+        return await response.json();
+    }
+}
+```
+
+Response
+```json
+{
+    "accessToken": "ACCESS_TOKEN"
+}
+```
+
+## リフレッシュトークンの有効期限
+
+リフレッシュトークンは該当ユーザーが連帯解除するまで永久に利用可能です。
+
+もしリフレッシュトークンを送っても400が帰ってくる場合は該当ユーザーが連帯解除をしたという事です。

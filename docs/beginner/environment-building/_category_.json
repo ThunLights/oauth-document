@@ -1,0 +1,8 @@
+{
+    "label": "環境構築",
+    "position": 2,
+    "link": {
+        "type": "generated-index",
+        "description": "本ドキュメントの推奨環境構築について導入方法等を解説します。"
+    }
+}
