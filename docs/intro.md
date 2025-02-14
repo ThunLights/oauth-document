@@ -1,26 +1,26 @@
 ---
 sidebar_position: 1
-title: まず最初に...
+title: First of all...
 ---
 
-# 本ドキュメントで解説する事
+# What This Document Explains
 
-本ドキュメントではThunLights Oauthの解説をしています。
+This document provides an explanation of ThunLights Oauth.
 
-ThunLights Oauthを使う事でThunLights Accountとあなたのサービスを繋ぐことができ、より簡単にアカウントシステムを構築することが出来ます。
+By using ThunLights Oauth, you can connect your ThunLights Account with your service, making it easier to build an account system.
 
-## ThunLightsアカウントの特徴
+# Features of ThunLights Account
 
-- 徹底的なスクレイピング対策
-> ThunLightsアカウントシステムは個人サイトとしては最大級のスクレイピング対策を搭載しています。
+- Comprehensive Anti-Scraping Measures
+> The ThunLights account system is equipped with one of the largest anti-scraping measures available for personal sites.
 
-- 様々なサービスへの導入
-> ThunLightsサービスでは一部を除きほぼ全てでThunLights Oauthを使っています。
-> 
-> これにより必要機能のアップデートなどが日々行われています。
+- Integration with Various Services
+> Almost all ThunLights services, with a few exceptions, utilize ThunLights Oauth.
+>
+> This allows for daily updates of necessary features.
 
-## 推奨環境
+# Recommended Environment
 
-全てのexampleコードは全てTypeScriptで書かれていてWindows10環境とUbuntu22環境での実行が確認されています。
+All example code is written in TypeScript and has been confirmed to run in both Windows 10 and Ubuntu 22 environments.
 
-他環境では動作の安定を保証できません。他環境で実行する場合は随時デバッグなどをしていただけると幸いです。
+We cannot guarantee stability in other environments. If you run it in a different environment, we would appreciate your debugging efforts as needed.
