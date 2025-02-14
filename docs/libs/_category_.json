@@ -1,0 +1,8 @@
+{
+    "label": "Use Libraries",
+    "position": 2,
+    "link": {
+        "type": "generated-index",
+        "description": "A brief summary of thunlights open authorization for each language."
+    }
+}
