@@ -15,21 +15,25 @@ import WebSocket from "ws";
 const ws = new WebSocket("wss://oauth.thunlights.com/ws");
 
 ws.on("open", async () => {
-    ws.on("message", (message, isBinary) => {
-        const data = JSON.parse(message);
-        if (data.type === "heartbeat") {
-            return ws.send(JSON.stringify({
-                type: "heartbeat",
-                content: Date.now(),
-            }));
-        }
-    });
+	ws.on("message", (message, isBinary) => {
+		const data = JSON.parse(message);
+		if (data.type === "heartbeat") {
+			return ws.send(
+				JSON.stringify({
+					type: "heartbeat",
+					content: Date.now()
+				})
+			);
+		}
+	});
 
-    ws.send(JSON.stringify({
-        type: "handshake",
-        applicationId: "APPLICATION_ID",
-        secret: "SECRET_KEY",
-    }));
+	ws.send(
+		JSON.stringify({
+			type: "handshake",
+			applicationId: "APPLICATION_ID",
+			secret: "SECRET_KEY"
+		})
+	);
 });
 ```
 
@@ -38,82 +42,93 @@ Basic communication can be done with the above code.
 ## Message Types
 
 Request Types
+
 ```json
 {
-    "type": "heartbeat",
-    "content": 12345
+	"type": "heartbeat",
+	"content": 12345
 }
 ```
+
 ```json
 {
-    "type": "handshake",
-    "applicationId": "APPLICATION_ID",
-    "secret": "SECRET_KEY"
+	"type": "handshake",
+	"applicationId": "APPLICATION_ID",
+	"secret": "SECRET_KEY"
 }
 ```
+
 ```json
 {
-    "type": "code",
-    "content": "INPUT_CODE_HERE"
+	"type": "code",
+	"content": "INPUT_CODE_HERE"
 }
 ```
+
 ```json
 {
-    "type": "accessToken",
-    "content": "INPUT_ACCESSTOKEN_HERE"
+	"type": "accessToken",
+	"content": "INPUT_ACCESSTOKEN_HERE"
 }
 ```
+
 ```json
 {
-    "type": "refreshToken",
-    "content": "INPUT_REFRESHTOKEN_HERE"
+	"type": "refreshToken",
+	"content": "INPUT_REFRESHTOKEN_HERE"
 }
 ```
 
 Response Types
+
 ```json
 {
-    "type": "error",
-    "content": "ERR_CONTENT"
+	"type": "error",
+	"content": "ERR_CONTENT"
 }
 ```
+
 ```json
 {
-    "type": "welcome",
-    "content": "WELCOME_MESSAGE"
+	"type": "welcome",
+	"content": "WELCOME_MESSAGE"
 }
 ```
+
 ```json
 {
-    "type": "open",
-    "content": "YOUR_APPLICATION_ID"
+	"type": "open",
+	"content": "YOUR_APPLICATION_ID"
 }
 ```
+
 ```json
 {
-    "type": "code",
-    "content": {
-        "accessToken": "ACCESSTOKEN",
-        "refreshToken": "REFRESHTOKEN"
-    }
+	"type": "code",
+	"content": {
+		"accessToken": "ACCESSTOKEN",
+		"refreshToken": "REFRESHTOKEN"
+	}
 }
 ```
+
 ```json
 {
-    "type": "accessToken",
-    "content": {
-        "id": 0,
-        "txtId": "TXTID",
-        "email": "EMAIL",
-        "displayName": "DISPLAYNAME"
-    }
+	"type": "accessToken",
+	"content": {
+		"id": 0,
+		"txtId": "TXTID",
+		"email": "EMAIL",
+		"displayName": "DISPLAYNAME"
+	}
 }
 ```
+
 ```json
 {
-    "type": "refreshToken",
-    "content": {
-        "accessToken": "ACCESSTOKEN"
-    }
+	"type": "refreshToken",
+	"content": {
+		"accessToken": "ACCESSTOKEN"
+	}
 }
 ```

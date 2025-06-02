@@ -8,6 +8,7 @@ title: /check/refresh/$refreshToken
 This API can be used to reissue access tokens.
 
 Example
+
 ```ts
 const id = 0;
 const refreshToken = "";
@@ -16,22 +17,23 @@ const domain = encodeURIComponent("");
 const url = `https://oauth.thunlights.com/check/refreshToken/${refreshToken}`;
 
 async function main() {
-    const response = await fetch(`${url}?secret=${secret}&domain=${domain}&id=${id}`, {
-        method: "POST",
-    });
+	const response = await fetch(`${url}?secret=${secret}&domain=${domain}&id=${id}`, {
+		method: "POST"
+	});
 
-    if (response.ok) {
-        console.log("-------DATA-------");
-        console.log(await response.json());
-    }
+	if (response.ok) {
+		console.log("-------DATA-------");
+		console.log(await response.json());
+	}
 }
 
 main();
 ```
 
 Response
+
 ```json
 {
-    "accessToken": "ACCESS_TOKEN"
+	"accessToken": "ACCESS_TOKEN"
 }
 ```

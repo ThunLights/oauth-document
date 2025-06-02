@@ -12,12 +12,13 @@ By using ThunLights Oauth, you can connect your ThunLights Account with your ser
 # Features of ThunLights Account
 
 - Comprehensive Anti-Scraping Measures
-> The ThunLights account system is equipped with one of the largest anti-scraping measures available for personal sites.
+
+  > The ThunLights account system is equipped with one of the largest anti-scraping measures available for personal sites.
 
 - Integration with Various Services
-> Almost all ThunLights services, with a few exceptions, utilize ThunLights Oauth.
->
-> This allows for daily updates of necessary features.
+  > Almost all ThunLights services, with a few exceptions, utilize ThunLights Oauth.
+  >
+  > This allows for daily updates of necessary features.
 
 # Recommended Environment
 

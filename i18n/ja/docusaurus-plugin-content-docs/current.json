@@ -1,30 +1,30 @@
 {
-  "version.label": {
-    "message": "Next",
-    "description": "The label for version current"
-  },
-  "sidebar.tutorialSidebar.category.Use Libraries": {
-    "message": "Use Libraries",
-    "description": "The label for category Use Libraries in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Use Libraries.link.generated-index.description": {
-    "message": "A brief summary of thunlights open authorization for each language.",
-    "description": "The generated-index page description for category Use Libraries in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Endpoints": {
-    "message": "Endpoints",
-    "description": "The label for category Endpoints in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Endpoints.link.generated-index.description": {
-    "message": "A brief summary of each endpoint is provided.",
-    "description": "The generated-index page description for category Endpoints in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Preparation": {
-    "message": "Preparation",
-    "description": "The label for category Preparation in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Preparation.link.generated-index.description": {
-    "message": "Preliminary preparations are explained.",
-    "description": "The generated-index page description for category Preparation in sidebar tutorialSidebar"
-  }
+	"version.label": {
+		"message": "Next",
+		"description": "The label for version current"
+	},
+	"sidebar.tutorialSidebar.category.Use Libraries": {
+		"message": "Use Libraries",
+		"description": "The label for category Use Libraries in sidebar tutorialSidebar"
+	},
+	"sidebar.tutorialSidebar.category.Use Libraries.link.generated-index.description": {
+		"message": "A brief summary of thunlights open authorization for each language.",
+		"description": "The generated-index page description for category Use Libraries in sidebar tutorialSidebar"
+	},
+	"sidebar.tutorialSidebar.category.Endpoints": {
+		"message": "Endpoints",
+		"description": "The label for category Endpoints in sidebar tutorialSidebar"
+	},
+	"sidebar.tutorialSidebar.category.Endpoints.link.generated-index.description": {
+		"message": "A brief summary of each endpoint is provided.",
+		"description": "The generated-index page description for category Endpoints in sidebar tutorialSidebar"
+	},
+	"sidebar.tutorialSidebar.category.Preparation": {
+		"message": "Preparation",
+		"description": "The label for category Preparation in sidebar tutorialSidebar"
+	},
+	"sidebar.tutorialSidebar.category.Preparation.link.generated-index.description": {
+		"message": "Preliminary preparations are explained.",
+		"description": "The generated-index page description for category Preparation in sidebar tutorialSidebar"
+	}
 }
