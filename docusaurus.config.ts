@@ -11,8 +11,9 @@ const config: Config = {
 	url: "https://documents.thunlights.com",
 	baseUrl: "/",
 
+	projectName: "thunlights.github.io",
 	organizationName: "thunlights",
-	projectName: "ThunlightsOauthDocument",
+	trailingSlash: false,
 
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
