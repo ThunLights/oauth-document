@@ -1,0 +1,11 @@
+.notFound {
+	display: block;
+	text-align: center;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 30px 0;
+}
