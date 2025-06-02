@@ -3,7 +3,7 @@ import js from "@eslint/js";
 import tseslint from "typescript-eslint";
 import { includeIgnoreFile } from "@eslint/compat";
 import { defineConfig } from "eslint/config";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, URL } from "node:url";
 
 const gitignorePath = fileURLToPath(new URL("./.gitignore", import.meta.url));
 
