@@ -21,7 +21,7 @@ const config: Config = {
 	i18n: {
 		defaultLocale: "en",
 		path: "i18n",
-		locales: ["en", "ja"],
+		locales: ["en", "ja"]
 	},
 
 	presets: [
@@ -30,24 +30,24 @@ const config: Config = {
 			{
 				docs: {
 					sidebarPath: "./sidebars.ts",
-					editUrl: "https://github.com/ThunLights/oauth-document/tree/main",
+					editUrl: "https://github.com/ThunLights/oauth-document/tree/main"
 				},
 				blog: {
 					showReadingTime: true,
 					feedOptions: {
 						type: ["rss", "atom"],
-						xslt: true,
+						xslt: true
 					},
 					editUrl: "https://github.com/ThunLights/oauth-document/tree/main",
 					onInlineTags: "warn",
 					onInlineAuthors: "warn",
-					onUntruncatedBlogPosts: "warn",
+					onUntruncatedBlogPosts: "warn"
 				},
 				theme: {
-					customCss: "./src/css/custom.css",
-				},
-			} satisfies Preset.Options,
-		],
+					customCss: "./src/css/custom.css"
+				}
+			} satisfies Preset.Options
+		]
 	],
 
 	themeConfig: {
@@ -56,30 +56,30 @@ const config: Config = {
 			title: "ThunLights",
 			logo: {
 				alt: "Logo",
-				src: "img/icon.webp",
+				src: "img/icon.webp"
 			},
 			items: [
 				{
 					type: "docSidebar",
 					sidebarId: "tutorialSidebar",
 					position: "left",
-					label: "Docs",
+					label: "Docs"
 				},
 				{ to: "/blog", label: "Blog", position: "left" },
-//                {
-//                    type: "docsVersionDropdown",
-//                    position: "left",
-//                },
+				//                {
+				//                    type: "docsVersionDropdown",
+				//                    position: "left",
+				//                },
 				{
 					href: "https://github.com/thunlights/oauth-document",
 					label: "GitHub",
-					position: "right",
+					position: "right"
 				},
 				{
 					type: "localeDropdown",
-					position: "right",
-				},
-			],
+					position: "right"
+				}
+			]
 		},
 		footer: {
 			style: "dark",
@@ -89,44 +89,44 @@ const config: Config = {
 					items: [
 						{
 							label: "Tutorial",
-							to: "/docs/intro",
-						},
-					],
+							to: "/docs/intro"
+						}
+					]
 				},
 				{
 					title: "Community",
 					items: [
 						{
 							label: "X",
-							href: "https://x.com/thunlights",
-						},
-					],
+							href: "https://x.com/thunlights"
+						}
+					]
 				},
 				{
 					title: "More",
 					items: [
 						{
 							label: "Blog",
-							to: "/blog",
+							to: "/blog"
 						},
 						{
 							label: "ThunLights",
-							href: "https://thunlights.com",
+							href: "https://thunlights.com"
 						},
 						{
 							label: "GitHub",
-							href: "https://github.com/thunlights/oauth-document",
-						},
-					],
-				},
+							href: "https://github.com/thunlights/oauth-document"
+						}
+					]
+				}
 			],
-			copyright: `Copyright © ${new Date().getFullYear()} ThunLights Oauth Document, Inc. Built with Docusaurus.`,
+			copyright: `Copyright © ${new Date().getFullYear()} ThunLights Oauth Document, Inc. Built with Docusaurus.`
 		},
 		prism: {
 			theme: prismThemes.github,
-			darkTheme: prismThemes.dracula,
-		},
-	} satisfies Preset.ThemeConfig,
+			darkTheme: prismThemes.dracula
+		}
+	} satisfies Preset.ThemeConfig
 };
 
 export default config;

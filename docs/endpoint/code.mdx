@@ -8,6 +8,7 @@ title: /check/code/$code
 By using this API, codes can be converted into accessToken and refreshToken.
 
 Example
+
 ```ts
 const code = "";
 const secret = "";
@@ -15,23 +16,24 @@ const domain = encodeURIComponent("");
 const url = `https://oauth.thunlights.com/check/code/${code}`;
 
 async function main() {
-    const response = await fetch(`${url}?secret=${secret}&domain=${domain}`, {
-        method: "POST",
-    });
+	const response = await fetch(`${url}?secret=${secret}&domain=${domain}`, {
+		method: "POST"
+	});
 
-    if (response.ok) {
-        console.log("-------DATA-------");
-        console.log(await response.json());
-    }
+	if (response.ok) {
+		console.log("-------DATA-------");
+		console.log(await response.json());
+	}
 }
 
 main();
 ```
 
 Response
+
 ```json
 {
-    "accessToken": "ACCESS_TOKEN",
-    "refreshToken": "REFRESH_TOKEN"
+	"accessToken": "ACCESS_TOKEN",
+	"refreshToken": "REFRESH_TOKEN"
 }
 ```
